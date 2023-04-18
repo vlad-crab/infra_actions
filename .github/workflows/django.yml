@@ -68,7 +68,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.VM_PASSPHRASE }}
         script: |
-          # Выполняет pull образа с DockerHu
+          # Выполняет pull образа с DockerHub
           sudo docker pull vladcrab/infra_actions
           #остановка всех контейнеров
           sudo docker stop $(sudo docker ps -a -q)
